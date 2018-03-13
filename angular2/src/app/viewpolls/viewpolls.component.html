@@ -1,0 +1,12 @@
+<mat-card>
+  <mat-card-content>
+    <h2>Question goes here plz vote?</h2>
+    <mat-radio-group name="votert" [(ngModel)]="votert" style="display: inline-flex; flex-direction: column">
+      <mat-radio-button *ngFor="let option of testArray" [value]="option.option" style="margin: 5px">
+        {{ option.option }}
+      </mat-radio-button>
+    </mat-radio-group>
+    <br>
+    <p>{{votert}}</p>
+  </mat-card-content>
+</mat-card>

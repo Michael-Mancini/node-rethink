@@ -1,0 +1,21 @@
+<div style="display: flex;flex-direction: column; min-width: 315px; max-width: 700px; width: 80%; margin: auto">
+  <mat-form-field>
+    <input
+      matInput
+      type="text"
+      placeholder="Enter poll question"
+      >
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput type="text" placeholder="Option">
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput type="text" placeholder="Option2">
+  </mat-form-field>
+  <mat-form-field *ngFor="let option of options">
+    <input matInput type="text" placeholder="{{option.title}}">
+  </mat-form-field>
+  <button (click)="addOption()" mat-raised-button color="accent">Add another option</button>
+  <br>
+  <button mat-raised-button color="primary">Submit Poll</button>
+</div>

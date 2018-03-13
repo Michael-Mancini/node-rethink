@@ -1,0 +1,21 @@
+{
+  "name": "rethink-poll",
+  "version": "1.0.0",
+  "description": "Real time polling app with node/express + RethinkDB + Socket.io",
+  "main": "app.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Michael Mancini",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^2.6.0",
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "rethinkdb": "^2.3.3",
+    "socket.io": "^2.0.4"
+  }
+}
